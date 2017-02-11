@@ -1,7 +1,7 @@
+# Connector for MS SQL Server
 library(RODBC)
 
-query <- "select top 10 *
-  from dbo.IDE_Advisor"
+query <- "<enter query here>"
 
 sql.query <- function(server,database,query) {
     library(RODBC)
@@ -11,4 +11,4 @@ sql.query <- function(server,database,query) {
     return(data)
   }
 
-data <- sql.query("CRASTRMSRS02","Prod01",query)
+data <- sql.query("<servername>","<databasename>",query)
